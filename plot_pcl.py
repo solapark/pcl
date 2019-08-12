@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-p = pcl.load("PointCloud_namuga/00.ply")
+p = pcl.load_XYZRGB("PointCloud_namuga/00.ply")
 p_np = np.asarray(p)
 x, y, z = p_np[:,0], p_np[:, 1], p_np[:, 2]
 fig = plt.figure(figsize=(10, 5))
